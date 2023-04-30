@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js" buffer></script>
+</head>
+<body>
+    <div id="page-wrapper">
+
+        <!-- NAVBAR -->
+        <div class="navbar">
+            <div class="desktop-navbar">
+                <div class="logo">
+                    <h1>Learn Paradise</h1>
+                </div>
+                <nav class="links">
+                    <a href="/">Home</a>
+                    <a href="#courses">Courses</a>
+                    <a href="#resources">Resources</a>
+                    <a href="#contact">Contact us</a>
+                </nav>
+                <div class="sign-in">
+                    <p>Sign in</p>
+                </div>
+            </div>
+
+            <div class="mobile-navbar">
+                <div class="logo">
+                    <h1>Learn Paradise</h1>
+                </div>
+                <span class="material-symbols-outlined" style="font-size: 38px; cursor: pointer;" onclick="toggleMenu(true)">
+                    menu
+                </span>
+
+                <!-- SIDE MENU -->
+                <div class="side-menu">
+                    <span class="material-symbols-outlined" style="font-size: 38px; cursor: pointer; color: white;" onclick="toggleMenu(false)">
+                        close
+                    </span>
+                    <div class="logo">
+                        <h1 style="color: #E8F9FD">Learn Paradise</h1>
+                    </div>
+                    <nav class="mob-links">
+                        <a href="/" onclick="toggleMenu(false)">Home</a>
+                        <a href="#courses" onclick="toggleMenu(false)">Courses</a>
+                        <a href="#resources" onclick="toggleMenu(false)">Resources</a>
+                        <a href="#contact" onclick="toggleMenu(false)">Contact us</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- HERO SECTION -->
+        <div id="hero">
+            <div class="heading">
+                <h2>
+                    <span style="color: #FF1E00;">Online</span> Education
+                </h2>
+                <h1>
+                    <span style="font-weight: 700;">Feels Like</span> Real <br> Classroom
+                </h1>
+                <p>
+                    Amazing Courses with amazing resources
+                </p>
+                <div class="get-started">
+                    <p>Get Started</p>
+                </div>
+            </div>
+            <img class="arrow" src="assets/curly-dotted-arrow.svg" alt="arrow">
+            <div>
+                <img class="hero-banner" src="assets/hero.svg" alt="hero banner">
+            </div>
+        </div>
+
+        <!-- ABOUT US -->
+        <div id="about">
+            <div class="about-header">
+                <h2>Learn More <span>About us</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="about-1">
+                    <img src="assets/no-1.png" alt="no-1">
+                    <h3>The Best Curriculumns</h3>
+                    <p>
+                        Access the best e-learning curriculums, 
+                        designed by experienced educators and subject matter experts.
+                    </p>
+                </div>
+                <div class="about-2">
+                    <img src="assets/abc.png" alt="abc">
+                    <h3>The Best Teachers</h3>
+                    <p>
+                        Learn from the most experienced and qualified teachers 
+                        our e-learning platform
+                    </p>
+                </div>
+                <div class="about-3">
+                    <img src="assets/knowledge.png" alt="knowledge">
+                    <h3>The Best Curriculumns</h3>
+                    <p>
+                        Our commitment to excellence ensures top-tier training and knowledge.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- OUR COURSES -->
+        <div id="courses">
+            <div class="courses-header">
+                <h2><span>Our</span> Courses</h2>
+                <p>
+                    Our e-learning platform offers a wide range of courses designed to meet the needs of learners at all levels. 
+                    Whether you're looking to develop new skills, enhance your knowledge or advance your career, our courses are 
+                    tailored to help you achieve your goals.
+                </p>
+                <div class="explore">
+                    <p>Explore</p>
+                </div>
+            </div>
+            <div>
+                <img class="courses-banner" src="assets/course.svg" alt="course">
+            </div>
+        </div>
+
+        <!-- RESOURCES -->
+        <div id="resources">
+            <div>
+                <img class="resources-banner" src="assets/resources.svg" alt="resources">
+            </div>
+            <div class="resources-header">
+                <h2>Resources</h2>
+                <p>
+                    Access a wide range of interactive study materials, informative e-books, 
+                    and online research papers to support your learning journey on our e-learning platform.
+                </p>
+                <div class="explore r-explore">
+                    <p>Explore</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOCIAL PROOF -->
+        <div id="social">
+            <h2>Trusted by over 13k+ great teams</h2>
+            <p>Leading companies and institutions use our courses to help their employees learn efficiently </p>
+        </div>
+
+        <!-- CONTACT US -->
+        <div id="contact">
+            <div class="contact-widget">
+                <div class="contact-header">
+                    <h2>Contact <span>Us</span></h2>
+                    <p>
+                        Have a question or concern about our e-learning platform? Contact us for support!
+                    </p>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="text" name="email" placeholder="E-Mail">
+                        <textarea name="description" cols="30" rows="6" placeholder="Description"></textarea>
+                    </form>
+                    <a class="submit-btn" href="/">
+                        <p>Submit</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div id="footer">
+        <div class="footer-info">
+            <h3>Learn Paradise</h3>
+            <p>Unlock Your Potential with Our Online Learning.</p>
+        </div>
+        <div class="footer-other">
+            <p>Terms</p>
+            <p>Privacy Policy</p>
+            <p>About</p>
+        </div>
+    </div>
+</body>
+</html>
